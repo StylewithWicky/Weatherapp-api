@@ -1,0 +1,96 @@
+/* Sidebar.css */
+
+.sidebar {
+   background: #ffffff;
+  height: 95vh;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.Search-bar {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.Search-bar button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #6c63ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Search-bar button:hover {
+  background-color: #5853d6;
+}
+
+.Details {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.City p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.temperature p {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.Condition p {
+  font-size: 20px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.Description p {
+  font-size: 16px;
+  color: #888;
+  margin: 5px 0;
+}
+
+img.weather-icon {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.extra-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #555;
+}
+
+.extra-info div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

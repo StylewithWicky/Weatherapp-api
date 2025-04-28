@@ -1,20 +1,36 @@
-import React from 'react'
+import React from 'react';
 
-function Details({weather,setWeather}) {
+function Details({ weather }) {
   return (
     <div className='Details'>
-        {weather?.city?.name &&(
-            <div>
+      {weather?.city?.name && (
+        <div>
+          <div className='City'>
             <p>{weather.city.name}</p>
-            <p>{weather.list[0].main.temp}</p>
-            <p>{weather.list[0].weather[0].main}</p>
-            <p>{weather.list[0].description}</p>
-       
-            </div>
-        )}
+          </div>
 
+          <div className='temperature'>
+            <p>{Math.round(weather.list[0].main.temp)}°C</p>
+          </div>
+
+          {/* Weather Icon */}
+          <img 
+            className="weather-icon"
+            src={`https://openweathermap.org/img/wn/${weather.list[0].weather[0].icon}@2x.png`}
+            alt="weather icon"
+          />
+
+          <div className='Condition'>
+            <p>{weather.list[0].weather[0].main}</p>
+          </div>
+
+          <div className='Description'>
+            <p>{weather.list[0].weather[0].description}</p>
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default Details
+export default Details;
